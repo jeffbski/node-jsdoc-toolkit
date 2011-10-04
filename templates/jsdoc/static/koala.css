@@ -1,0 +1,42 @@
+/* Code */
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+*:not(pre) > code.syntax {
+  padding: 12px;
+  color: #fff;
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+pre {
+  padding: 12px;
+  color: #fff;
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 1px 4px #000;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 1px 4px #000;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 1px 4px #000;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre code { background: none; }
+pre code, code { color: #fff;}
+pre code .comment, code .comment { color: #726D73; }
+pre code .const, pre.code .constant, code .const { color: #585CF6; }
+pre code .symbol , code .symbol { color: #C5060B; }
+pre code .class, pre code .number, code .number { color: #DA7E64; }
+pre code .variable, pre code .this, code .variable { color: #889AB3; }
+pre code .string , code .string { color: #A0AB82; }
+pre code .keyword , code .keyword{ color: #D7B583; }
+pre code .regexp code .regexp { color: #EEC981; }
