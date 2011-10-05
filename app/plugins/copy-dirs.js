@@ -1,5 +1,10 @@
 var exec = IO.require('child_process').exec;
 
+/*
+  This plugin allows jsdoc-toolkit to optionally copy one or more directories from the template
+  folder to the ouput directory using "cp -r"
+*/
+
 JSDOC['copy-dirs'] = null;    // specify dirs to auto copy from the template, --copy-dirs=shared,media
 JSDOC['copy-dirs-to'] = null;
 
