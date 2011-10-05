@@ -283,7 +283,8 @@ IO = {
 		if (!path) return;
 		for (var lib = IO.ls(SYS.pwd+path), i = 0; i < lib.length; i++)
 			if (/\.js$/i.test(lib[i])) load(lib[i]);
-	}
+	},
+        require: require //expose require as IO.require for plugins to use
 }
 
 // now run the application
