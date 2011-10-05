@@ -1,13 +1,14 @@
 IO.include("plugins/smartdown/smartdown.js");
 
-JSDOC.useSmartdown = false;           // enable with command line option --smartdown
-JSDOC.useSyntaxHighlighting = false;  // enable embedded syntax highlighting with option --highlight (requires --smartdown)
+JSDOC.useSmartdown = true;            // on by default, disable with command line option --smartdown=false
+JSDOC.useSyntaxHighlighting = false;  // enable embedded syntax highlighting with option --highlight (requires smartdown be enabled)
 
 JSDOC.PluginManager.registerPlugin(
   "JSDOC.smartdown",
   {
     onInit: function(opts){
-      if (opts.smartdown) { JSDOC.useSmartdown = true; }
+      if (opts.smartdown !== undefined && opts.smartdown.toLowerCase() === 'false') { 
+        JSDOC.useSmartdown = false; }
       if (opts.highlight) { JSDOC.useSyntaxHighlighting = true; }
     },
     onDocTag: function(docTag) {
