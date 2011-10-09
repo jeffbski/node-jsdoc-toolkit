@@ -45,6 +45,11 @@ The output documentation files will be saved to a new directory named
 "out" (by default) in the current directory, or if you specify a
 -d=somewhere_else option, to the somewhere_else directory.
 
+
+A typical command would look like this
+$ app/run.js -t=templates/jsdoc -d=out --private -a -v -r=20 --copy-dirs=shared app
+
+
 For help (usage notes) enter this on the command line:
 
 $ app/run.js --help
@@ -86,6 +91,9 @@ for use under the X11/MIT License.
 
 JsDoc Toolkit is Copyright (c)2009 Michael Mathews <micmath@gmail.com>
 Additional portions are Copyright (c)2010 Aaron Wirtz <me@awirtz.com>
+
+Some modifications to allow markdown support were used from 
+sproutcore-doc and github-flavored-markdown
 
 This program is free software; you can redistribute it and/or
 modify it under the terms below.
