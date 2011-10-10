@@ -1,5 +1,5 @@
 {
-  "name": "jsdoc-md",
+  "name": "node-jsdoc-toolkit",
   "description": "JSDoc Toolkit with Markdown",
   "version": "0.0.1",
   "private": true,
