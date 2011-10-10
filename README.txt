@@ -26,6 +26,11 @@ Node.JS interpreter http://nodejs.org
 
 ======================================================================
 
+INSTALLATION
+
+     npm install https://github.com/jeffbski/node-jsdoc-toolkit/tarball/master
+
+
 USAGE:
 
 Before running the JsDoc Toolkit app you should change your current
